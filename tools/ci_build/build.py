@@ -946,7 +946,7 @@ def setup_cuda_vars(args):
                 .format(
                     cuda_home, cuda_home_valid, cudnn_home, cudnn_home_valid))
 
-        #Our CI build machines already have the env vars setup
+        # Our CI build machines already have the env vars setup
         if is_windows() and 'AGENT_VERSION' not in os.environ:
             # Validate that the cudnn_home is pointing at
             # the right level.
